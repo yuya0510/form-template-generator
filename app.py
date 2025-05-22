@@ -31,4 +31,3 @@ if st.session_state.questions:
     for i, word in enumerate(st.session_state.questions):
         st.markdown(f"**Q{i+1}. 評価語「{word}」は、これらのサンプルを触って違いが分かると思いますか？**")
         st.radio("選択してください：", ["はい", "いいえ"], key=f"q{i+1}")
-
